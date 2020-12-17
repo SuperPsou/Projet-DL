@@ -77,15 +77,13 @@ class VQADataset(Dataset):
 
     return (image, question, answer)
 
-from google.colab import drive
-drive.mount('/content/drive')
 
 from torch.utils.data import DataLoader
 
 # Précisez la localisation de vos données sur Google Drive
-path = "/content/drive/MyDrive/InAction_Donnee200"
-image_folder = "boolean_answers_dataset_images_200"
-descriptor = "boolean_answers_dataset_200.csv"
+path = "/harispe"
+image_folder = "boolean_answers_dataset_images_10000"
+descriptor = "boolean_answers_dataset_10000.csv"
 
 
 batch_size = 2
