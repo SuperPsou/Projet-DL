@@ -121,8 +121,10 @@ trainSet = []
 testSet = []
 question_set = []
 
-
+print("preparing dataset...")
 for i in range(taille):
+    
+  print(i/taille*100)
 
   ####### OUTPUT Transforme : Yes -> 0   No -> 1
   output = 1
@@ -278,7 +280,7 @@ def train_optim(model, epochs, log_frequency, device, learning_rate=1e-4):
       print("[validation] accuracy: {:.3f}%\n".format(100 * correct / total))
 
 """## Lance modele"""
-
+print("Learning...")
 D_out = 2
 
 model = LeNet5(D_out)
