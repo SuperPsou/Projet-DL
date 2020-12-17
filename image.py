@@ -81,7 +81,7 @@ class VQADataset(Dataset):
 from torch.utils.data import DataLoader
 
 # Précisez la localisation de vos données sur Google Drive
-path = "/harispe"
+path = "~/harispe"
 image_folder = "boolean_answers_dataset_images_10000"
 descriptor = "boolean_answers_dataset_10000.csv"
 
