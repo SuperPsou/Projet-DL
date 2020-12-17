@@ -22,9 +22,9 @@ import pandas as pd
 
 from typing import Any, Callable, Optional, Tuple
 
-!pip install transformers
-!pip install datasets
-!pip install sentencepiece
+pip install transformers
+pip install datasets
+pip install sentencepiece
 
 import torch
 torch.__version__
