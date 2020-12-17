@@ -65,7 +65,7 @@ class VQADataset(Dataset):
       image is a Tensor representation of the image
       question and answer are strings
     """
-    print("hey")
+    
     image_name = self.path + '/' + self.image_folder + '/' + self.descriptor["image_name"][idx]
 
     image = Image.open(image_name).convert('RGB')
@@ -82,7 +82,7 @@ class VQADataset(Dataset):
 from torch.utils.data import DataLoader
 
 # Précisez la localisation de vos données sur Google Drive
-path = "~/harispe"
+path = "/home/equipe2/harispe"
 image_folder = "boolean_answers_dataset_images_10000"
 descriptor = "boolean_answers_dataset_10000.csv"
 
