@@ -65,6 +65,7 @@ class VQADataset(Dataset):
       image is a Tensor representation of the image
       question and answer are strings
     """
+    print("hey")
     image_name = self.path + '/' + self.image_folder + '/' + self.descriptor["image_name"][idx]
 
     image = Image.open(image_name).convert('RGB')
